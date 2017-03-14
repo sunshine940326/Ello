@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1, maximum-scale=1">
+    <title>ELLOWORLD</title>
+    <link rel="stylesheet" href="ellocss/indexphone.css">
+    <link rel="stylesheet" href="ellocss/flexslider.css">
+
+</head>
+<body>
+<!--info-->
+<div class="info" id="info1">
+    <div class="infocontainer">
+
+        <div class="infoLeft">
+            <div class="infotext">
+                <div>
+                    We provide image design and interactive solutions
+                </div>
+            </div>
+            <div class="infotext">
+                <div>
+                    to brands and companies with excellent visual
+                </div>
+            </div>
+            <div class="infotext">
+                <div>
+                    art performance by HTML5,Web3D and AR technology.
+                </div>
+            </div>
+            <div class="infotext">
+                <div>
+                    copyright© Elloworld
+                </div>
+            </div>
+
+        </div>
+        <div class="infoRight">
+            <ul>
+                <li><img src="elloimg/logo1.png" alt=""></li>
+                <li><img src="elloimg/logo2.png" alt=""></li>
+                <li><img src="elloimg/logo3.png" alt=""></li>
+                <li><img src="elloimg/logo4.png" alt=""></li>
+                <li><img src="elloimg/logo5.png" alt=""></li>
+                <li><img src="elloimg/logo6.png" alt=""></li>
+                <li><img src="elloimg/logo7.png" alt=""></li>
+                <li><img src="elloimg/logo8.png" alt=""></li>
+                <li><img src="elloimg/logo9.png" alt=""></li>
+            </ul>
+            <div class="wechat">
+                <div class="wechattext">
+                    <p>Wechat</p>
+                </div>
+                <img src="elloimg/erweima.png" alt="">
+                <div>
+                    <p>info@elloworld.com</p>
+                </div>
+                <div>
+                    <p>+86-21-67892070</p>
+                </div>
+                <div class="address">
+                    <p>Rm.706-707,No.86 Sibao Road,Shanghai</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--top-->
+<div id="top">
+    <div class="topLeft">
+        <div class="topLeft1">
+            <img src="elloimg/logo.png" alt="">
+        </div>
+        <div class="topLeft2" style="font-family:'ChaparralPro-Regular'">CREATIVE | HTML5 | Web3D | AR | Game</div>
+    </div>
+    <div class="topRight">
+        <img id="topRightImg" src="elloimg/info.svg">
+        <img id="topRightImg2" src="elloimg/close.svg">
+    </div>
+</div>
+<div class="containerPhone">
+    <div id="creative">
+        <div class="label">
+            <img src="elloimg/creativeicon.png" alt="">
+            <img src="elloimg/creative.png" alt="">
+        </div>
+        <div class="phone">
+
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src="elloimg/7.png"/></li>
+                    <li><img src="elloimg/8.png"/></li>
+                    <li><img src="elloimg/9.png"/></li>
+
+                </ul>
+            </div>
+            <div class="phoneimg">
+                <img src="elloimg/phonewhite.png" alt="">
+            </div>
+            <div class="back">
+                <img src="elloimg/back.png">
+            </div>
+        </div>
+
+    </div>
+    <div id="web3d">
+        <div class="label">
+            <img src="elloimg/web3dicon.png" alt="">
+            <img src="elloimg/web3d1.png" alt="">
+        </div>
+
+    </div>
+    <div id="elloGame">
+        <div class="label">
+            <img src="elloimg/game.png" alt="">
+            <img src="elloimg/ellogame.png" alt="">
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript" src="ellojs/jquery.flexslider-min.js"></script>
+
+
+<script src="ellojs/mainphone.js"></script>
+<script type="text/javascript">
+    function view() {
+        return {
+            w: document.documentElement.clientWidth,
+            h: document.documentElement.clientHeight
+        };
+    }
+    document.body.style.height = view().h + 'px';
+
+
+    $(function () {
+        $(".flexslider").flexslider({
+            slideshowSpeed: 4000, //展示时间间隔ms
+            animationSpeed: 400, //滚动时间ms
+            touch: true //是否支持触屏滑动
+        });
+    });
+</script>
+
+
+</body>
+</html>
+

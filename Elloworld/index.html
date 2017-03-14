@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <!--[if lt IE 9]>
+    　　　　
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    　　<![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.elloworld.com/icon.ico" media="screen"/>
+
+
+    <meta charset="UTF-8">
+    <title>ElloWorld</title>
+    <link rel="stylesheet" href="ellocss/main.css">
+    <script>
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if ((bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+                window.location.href="indexphone.html";
+            }
+        }
+        browserRedirect();
+
+        window.addEventListener("resize", function() {
+            if (window.innerWidth<window.innerHeight) {
+
+                $('#orientLayer').hide();
+            }else{
+                //横屏状态
+                $('#orientLayer').show();
+            }
+        }, false);
+    </script>
+
+</head>
+<body>
+<div class="info" id="info1">
+    <div class="infocontainer">
+
+        <div class="infoLeft">
+            <div class="infotext">
+                <div>Web3d technology makes the product more intuitive on the page so that customers can understand
+                    goods better.
+                </div>
+            </div>
+            <div class="infotext">
+                <div> And we run high-quality 3d games on the web side which can be only experienced through the app in
+                    the past.
+                </div>
+            </div>
+            <div class="infotext">
+                <div>Based on web3d technology run directly on the browser side of the WebVR, we can publish Interactive
+                    VR content that can be viewed with one click without the need for installation.
+                </div>
+            </div>
+            <div class="infotext">
+                <div>Users can experience this technology through various hardware facilities such as mobile phones,
+                    cardboard and oculusVR.
+                </div>
+            </div>
+            <div class="infotext">
+                <div>With the massive HTML5 interactive advertising, many brands began to try to use three-dimensional
+                    interaction to meet the needs of creative realization and Multi-dimensional experience.
+                </div>
+            </div>
+            <div class="infotext">
+                <div>Html5 interactive advertising based on web3D technology will continue to appear in front of
+                    everyone.
+                </div>
+            </div>
+            <div class="infotext">
+                <div>This is a browser-based operation of the new three-dimensional interactive display technology.
+                </div>
+            </div>
+            <div class="infotext">
+                <div>Users can use computers, mobile phones, tablet browser client for three-dimensional virtual display
+                    and interaction.
+                </div>
+            </div>
+            <div class="infotext">
+                <div>It has a huge advantage over flash and pseudo-3D displays in terms of picture, efficiency and
+                    compatibility.
+                </div>
+            </div>
+        </div>
+        <div class="infoRight">
+            <ul>
+                <li><img src="elloimg/logo1.png" alt=""></li>
+                <li><img src="elloimg/logo2.png" alt=""></li>
+                <li><img src="elloimg/logo3.png" alt=""></li>
+                <li><img src="elloimg/logo4.png" alt=""></li>
+                <li><img src="elloimg/logo5.png" alt=""></li>
+                <li><img src="elloimg/logo6.png" alt=""></li>
+                <li><img src="elloimg/logo7.png" alt=""></li>
+                <li><img src="elloimg/logo8.png" alt=""></li>
+                <li><img src="elloimg/logo9.png" alt=""></li>
+            </ul>
+            <div class="wechat">
+                <div class="wechattext">
+                    <p>Wechat</p>
+                </div>
+                <img src="elloimg/erweima.png" alt="">
+                <div>
+                    <p>info@elloworld.com</p>
+                </div>
+                <div>
+                    <p>+86-21-67892070</p>
+                </div>
+                <div class="address">
+                    <p>Rm.706-707,No.86 Sibao Road,Shanghai</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class=" copyright">
+        <div class="copyrightLeft">
+            <img src="elloimg/icon.png" alt="">
+        </div>
+        <div class="copyrightRight">
+            <div>We provide image design and interactive solutionstobrands and companies with excellent visual
+                artperformance by HTML5,Web3D and AR technology.
+            </div>
+            <div>copyright &copy; Elloworld 2016</div>
+        </div>
+    </div>
+</div>
+<div class="container clearfix">
+    <!--top-->
+    <div id="top">
+        <div class="topLeft">
+            <div class="topLeft1">
+                <img src="elloimg/logo.png" alt="">
+            </div>
+            <div class="topLeft2" style="font-family:'ChaparralPro-Regular'">CREATIVE | HTML5 | Web3D | AR | Game</div>
+        </div>
+        <div class="topRight">
+            <img id="topRightImg" src="elloimg/info.svg">
+            <img id="topRightImg2" src="elloimg/close.svg">
+        </div>
+
+    </div>
+
+    <!--content-->
+    <div id="content">
+
+        <!--中间模块creative-->
+        <div id="creative">
+            <div class="center">
+                <div class="label">
+                    <img src="elloimg/creativeicon.png" alt="">
+                </div>
+                <!--展开之后内容-->
+                <div class="centerPad ">
+                    <div class="padcase">
+                        <img src="elloimg/padcase01.jpg">
+                    </div>
+                    <img src="elloimg/pad.png" alt="">
+
+                    <div id="wrapper">
+                        <div id="slider-wrapper">
+                            <div id="slider" class="nivoSlider">
+                                <img src="elloimg/padcase00.jpg" />
+                                <img src="elloimg/padcase01.jpg" />
+                                <img src="elloimg/padcase02.jpg" />
+                                <img src="elloimg/padcase03.jpg" />
+                                <img src="elloimg/padcase04.jpg" />
+                                <img src="elloimg/padcase05.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="phone">
+                    <img src="elloimg/phone.png" alt="">
+                    <div id="wrapperphone">
+                        <div id="slider-wrapperphone">
+                            <div id="sliderphone" class="nivoSlider">
+                                <img src="elloimg/iphonecase01.jpg"/>
+                                <img src="elloimg/iphonecase02.jpg"/>
+                                <img src="elloimg/iphonecase03.jpg"/>
+                                <img src="elloimg/iphonecase04.jpg"/>
+                                <img src="elloimg/iphonecase05.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="elloimg/book.png" alt="">
+                    <img class="book1" src="elloimg/bookcase002.png" alt="">
+                    <img class="pen" src="elloimg/pen.png" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <img src="elloimg/back.svg" alt="">
+            </div>
+        </div>
+        <!--左边的模块web3d-->
+        <div id="web3d">
+            <div class="center">
+                <div class="label">
+                    <img src="elloimg/web3dicon.png" alt="">
+                </div>
+
+            </div>
+            <iframe class="iframe1" src="http://case.elloworld.cn/game/ellota/" frameborder="0" width="100%"
+                    height="100%"></iframe>
+            <img class="overframe1" src="elloimg/002.png" alt="">
+        </div>
+        <!--右边ellogame-->
+        <div id="elloGame">
+            <div class="center">
+                <div class="label">
+                    <img src="elloimg/game.png" alt="">
+                </div>
+                <iframe class="iframe3" src="http://case.elloworld.cn/web3d/spaceweb/" frameborder="0" width="100%"
+                        height="100%"></iframe>
+
+                <img class="overframe3" src="elloimg/002.png" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    var j = jQuery.noConflict(true);
+</script>
+<script type="text/javascript" src="jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="ellojs/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="ellojs/jQuery.fontFlex.js"></script>
+
+<script src="ellojs/main.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('#slider').nivoSlider();
+        $('#sliderphone').nivoSlider();
+
+    });
+    $(function () {
+        $('.infotext').fontFlex(12, 14, 70);
+        $('.infotext').css({
+            'font-family': 'ChaparralPro-Regular',
+            'margin-top': '2%',
+            'font-weight': '100',
+        })
+    })
+
+
+
+</script>
+
+</body>
+</html>
